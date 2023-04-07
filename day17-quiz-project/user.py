@@ -1,8 +1,6 @@
 class User:
-    def __init__(self, name, username=None, password=None, email=None):
+    def __init__(self, name, email=None):
         self.name = name
-        self.username = username
-        self.password = password
         self.email = email
         self.followers = 0
 
@@ -17,4 +15,4 @@ aaron = User('Aaron')
 for x in range(5):
     aaron.add_follower()
 aaron.remove_follower()
-print(aaron.followers)
+print(f'Followers: {aaron.followers}')
